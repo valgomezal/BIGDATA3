@@ -7,7 +7,7 @@ dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
 
 table = dynamodb.Table('Animals')
 
-fe = Key('indice').begins_with("C")
+fe = Key('indice').begins_with("L")
 pe = "#idx, route, info"
 ean = { "#idx": "indice", }
 esk = None

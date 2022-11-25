@@ -4,8 +4,8 @@ import requests
 import time
 import os
 from urllib.parse import urlparse
-bucket_name="animalimagesfromscrapping"
-bucket_to_save_images = "buckettosaveimagesofanimalsforbigdata"
+bucket_name="imgscrapped"
+bucket_to_save_images = "savedimgscrapped"
 def handler(event,context):
     r = requests.get("https://misanimales.com/")
     f = open("/tmp/file.html", "w", encoding="utf8")
